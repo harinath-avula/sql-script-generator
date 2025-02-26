@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL File Upload</title>
+</head>
+<body>
+    <h2>Upload SQL File</h2>
+    <form action="/" method="post" enctype="multipart/form-data">
+        <input type="file" name="sql_file" required>
+        <br><br>
+        <label for="user">User:</label>
+        <input type="text" name="user" value="afs.user" required>
+        <br><br>
+        <label for="cfg_item">Config Item:</label>
+        <input type="text" name="cfg_item" value="">
+        <br><br>
+        <label for="updt_type">Update Type (I/U/D):</label>
+        <select name="updt_type">
+            <option value="I">Insert</option>
+            <option value="U">Update</option>
+            <option value="D">Delete</option>
+        </select>
+        <br><br>
+        <button type="submit">Upload and Generate</button>
+    </form>
+</body>
+</html>

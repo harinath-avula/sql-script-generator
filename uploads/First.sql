@@ -1,0 +1,1 @@
+INSERT INTO Employees (Name, Age, Department) VALUES ('John Doe', 30, 'HR');
